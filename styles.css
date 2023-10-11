@@ -1,0 +1,50 @@
+body {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #292b2c;
+    background-color: #fff;
+}
+
+h1{
+   margin: 32px;
+   color: #375f90;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 28px;
+   font-weight: bold;
+}
+
+.logo{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 146px ;
+}
+.logo img{
+    width: 275px;
+}
+
+.bottom{
+    text-align: center;
+}
+
+.bottom img{
+    margin: 12px;
+    width: 60px;
+    margin-bottom: 80px;
+}
+.selectCountry{
+    color: #375f90;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.copyright{
+    font-size: 13px;
+}
