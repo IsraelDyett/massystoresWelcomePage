@@ -47,4 +47,9 @@ h1{
 
 .copyright{
     font-size: 13px;
+    justify-content: center;
+    display: flex;
+}
+.flags img:hover {
+    box-shadow: 0 0 20px rgba(242, 122, 47, 0.7);
 }

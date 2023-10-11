@@ -43,15 +43,15 @@ h1{
     font-size: 16px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
-    background: -webkit-linear-gradient(#f95008, #0b92f9);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: white;
 }
 
 .copyright{
     color: white;
     font-size: 13px;
     opacity: 0.4;
+    justify-content: center;
+    display: flex;
 }
 
 .flags img:hover {

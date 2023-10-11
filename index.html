@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./darkModeStyles.css">
-    <title>WELCOME TO MASSY</title>
+    <link rel="shortcut icon" href="./assets/massy-stores-icon.webp">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Massy Stores</title>
 </head>
 <body>
     <header>
@@ -28,9 +29,64 @@
       </div>
    
       <div class="copyright">
-        <p >Copyright © 2018 Massy Stores</p>
+        <p >Copyright © </p><p id="currentYear"></p><p>. Massy Stores</p>
       </div>
 
     </div>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://ssl.geoplugin.net/javascript.gp?k=9d3fa2bf6030aaed" type="text/javascript"></script>
+    <script>
+      jQuery(document).ready(function () {
+         var code = "";
+       jQuery.getScript('https://ssl.geoplugin.net/javascript.gp?k=9d3fa2bf6030aaed', function()
+        {
+            var country = geoplugin_countryName();
+           // alert(country);
+    
+            code = geoplugin_countryCode();
+            // alert(code);
+        //code = "TT";
+            if(code == 'TT'){
+    
+          window.location = '//www.massystorestt.com';
+    
+        }
+        else if(code == 'GY')
+        {
+           window.location = '//www.massystoresgy.com/';
+    
+        }
+        else if(code == 'BB')
+        {
+           window.location = '//www.massystoresbb.com';
+    
+        }
+        else if(code == 'LC')
+        {
+           window.location = '//www.massystoresslu.com';
+    
+        }
+        else if(code == 'VC')
+        {
+           window.location = '//www.massystoressvg.com/';
+    
+        }
+        });
+    
+      });
+
+     </script>
+     <script>
+      const year = document.getElementById("currentYear");
+      year.innerHTML =  getCurrentYear();
+
+      function getCurrentYear() {
+          const year = new Date().getFullYear();
+          return year;
+      }
+     </script>
+     
 </body>
 </html>
