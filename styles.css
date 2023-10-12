@@ -4,7 +4,8 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color: #292b2c;
-    background-color: #fff;
+    background-color: transparent;
+    background-image: url(./assets/MicrosoftTeams-image.png);
 }
 
 h1{
@@ -13,6 +14,8 @@ h1{
    align-items: center;
    justify-content: center;
    display: flex;
+   text-align: center;
+
    font-family: 'Montserrat', sans-serif;
    font-size: 28px;
    font-weight: bold;
